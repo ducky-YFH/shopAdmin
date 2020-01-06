@@ -1,4 +1,4 @@
-# testadmin
+# shopAdmin
 
 ## Project setup
 ```
