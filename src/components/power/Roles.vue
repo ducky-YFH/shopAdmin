@@ -83,8 +83,9 @@
       </el-table-column>
     </el-table>
     <!-- 分配权限对话框 -->
-    <el-dialog 
-      title="提示" width="30%" 
+    <el-dialog
+      title="提示"
+      width="30%"
       :visible.sync="rightsDialog"
       :before-close="handleRightsClose"
     >

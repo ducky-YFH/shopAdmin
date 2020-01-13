@@ -63,7 +63,6 @@
                 label: 'cat_name',
                 value: 'cat_id',
               }"
-              @change="handleChange"
               clearable
               change-on-select
             ></el-cascader>
@@ -254,9 +253,6 @@ export default {
         })
       })
       window.console.log('确定');
-    },
-    // 选择多级联动
-    handleChange(){
     }
     // ----------------------------------------------
   },

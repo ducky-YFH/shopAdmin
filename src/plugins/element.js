@@ -31,7 +31,9 @@ import {
   Select,
   Option,
   Icon,
-  Cascader
+  Cascader,
+  Tabs,
+  TabPane
 } from 'element-ui'
 
 Vue.use(Button)
@@ -64,7 +66,8 @@ Vue.use(Select)
 Vue.use(Option)
 Vue.use(Icon)
 Vue.use(Cascader)
-
+Vue.use(Tabs)
+Vue.use(TabPane)
 // 全局使用
 Vue.prototype.$message = Message
 Vue.prototype.$msgbox = MessageBox
