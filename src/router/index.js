@@ -16,7 +16,7 @@ const routes = [
     path: '/home',
     redirect: '/welcome',
     component: () => import('../components/Home'),
-    children:[
+    children: [
       {
         path: '/welcome',
         component: () => import('../components/Welcome')
@@ -41,6 +41,14 @@ const routes = [
         path: '/params',
         component: () => import('../components/goods/Params')
       },
+      {
+        path: '/goods',
+        component: () => import('../components/goods/Goods.vue'),
+      },
+      {
+        path: '/addgoods',
+        component: () => import('../components/goods/AddGoods.vue'),
+      }
     ]
   }
 ]
@@ -56,9 +64,9 @@ const router = new VueRouter({
 router.beforeEach((to, from, next) => {
   // 隐式转换布尔类型
   let isLogin = !!sessionStorage.token
-  if(to.path == '/login'){
+  if (to.path == '/login') {
     next()
-  }else{
+  } else {
     isLogin ? next() : next('/login')
   }
 })
